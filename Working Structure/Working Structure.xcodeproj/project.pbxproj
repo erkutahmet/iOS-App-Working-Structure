@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		DC45662E2AD59955006609D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC45662D2AD59955006609D4 /* AppDelegate.swift */; };
 		DC4566302AD59955006609D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC45662F2AD59955006609D4 /* SceneDelegate.swift */; };
-		DC4566322AD59955006609D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4566312AD59955006609D4 /* ViewController.swift */; };
+		DC4566322AD59955006609D4 /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4566312AD59955006609D4 /* HomeScreenVC.swift */; };
 		DC4566352AD59955006609D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4566332AD59955006609D4 /* Main.storyboard */; };
 		DC4566372AD59956006609D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4566362AD59956006609D4 /* Assets.xcassets */; };
 		DC45663A2AD59956006609D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4566382AD59956006609D4 /* LaunchScreen.storyboard */; };
+		DC4566422AD599E5006609D4 /* GameScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4566412AD599E5006609D4 /* GameScreenVC.swift */; };
+		DC4566442AD599FC006609D4 /* ResultScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4566432AD599FC006609D4 /* ResultScreenVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DC45662A2AD59955006609D4 /* Working Structure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Working Structure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC45662D2AD59955006609D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC45662F2AD59955006609D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DC4566312AD59955006609D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC4566312AD59955006609D4 /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
 		DC4566342AD59955006609D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC4566362AD59956006609D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC4566392AD59956006609D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC45663B2AD59956006609D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC4566412AD599E5006609D4 /* GameScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreenVC.swift; sourceTree = "<group>"; };
+		DC4566432AD599FC006609D4 /* ResultScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreenVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				DC45662D2AD59955006609D4 /* AppDelegate.swift */,
 				DC45662F2AD59955006609D4 /* SceneDelegate.swift */,
-				DC4566312AD59955006609D4 /* ViewController.swift */,
+				DC4566312AD59955006609D4 /* HomeScreenVC.swift */,
+				DC4566412AD599E5006609D4 /* GameScreenVC.swift */,
+				DC4566432AD599FC006609D4 /* ResultScreenVC.swift */,
 				DC4566332AD59955006609D4 /* Main.storyboard */,
 				DC4566362AD59956006609D4 /* Assets.xcassets */,
 				DC4566382AD59956006609D4 /* LaunchScreen.storyboard */,
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC4566322AD59955006609D4 /* ViewController.swift in Sources */,
+				DC4566442AD599FC006609D4 /* ResultScreenVC.swift in Sources */,
+				DC4566422AD599E5006609D4 /* GameScreenVC.swift in Sources */,
+				DC4566322AD59955006609D4 /* HomeScreenVC.swift in Sources */,
 				DC45662E2AD59955006609D4 /* AppDelegate.swift in Sources */,
 				DC4566302AD59955006609D4 /* SceneDelegate.swift in Sources */,
 			);

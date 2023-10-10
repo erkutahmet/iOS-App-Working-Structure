@@ -14,7 +14,9 @@ class GameScreenVC: UIViewController {
         
     }
     @IBAction func backButtonClicked(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
     }
     @IBAction func doneButtonClicked(_ sender: Any) {
+        performSegue(withIdentifier: "toResultScreen", sender: nil)
     }
 }

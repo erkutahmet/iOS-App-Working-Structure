@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fPO-2c-JZc">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32I-Wp-jsc">
-                                <rect key="frame" x="52.666666666666657" y="159" width="288" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Screen" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32I-Wp-jsc">
+                                <rect key="frame" x="52.666666666666657" y="203" width="288" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -54,13 +54,15 @@
                             <constraint firstItem="0YF-PO-R7T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wgq-ir-zgM"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="WSt-ee-abB"/>
                     <connections>
                         <outlet property="homeScreenLabel" destination="32I-Wp-jsc" id="09z-7G-hKZ"/>
+                        <segue destination="hqU-Fg-5wO" kind="show" identifier="toGameScreen" id="oDt-g0-KTP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="108" y="4"/>
+            <point key="canvasLocation" x="1034.3511450381679" y="3.5211267605633805"/>
         </scene>
         <!--Game ScreenVC-->
         <scene sceneID="yhd-jm-G3r">
@@ -70,8 +72,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koF-rZ-Vqs">
-                                <rect key="frame" x="53" y="159" width="287" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koF-rZ-Vqs">
+                                <rect key="frame" x="53" y="203" width="287" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -108,27 +110,31 @@
                             <constraint firstItem="Dqp-xu-age" firstAttribute="bottom" secondItem="ALL-o9-FFa" secondAttribute="bottom" constant="200" id="tqz-nj-Nu2"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="6rp-6Y-cSp"/>
+                    <connections>
+                        <segue destination="MT4-8X-Tg6" kind="presentation" identifier="toResultScreen" id="JGU-23-B1U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bom-Z9-JUq" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="805" y="4"/>
+            <point key="canvasLocation" x="1730.534351145038" y="3.5211267605633805"/>
         </scene>
         <!--Result ScreenVC-->
         <scene sceneID="Jqi-Wv-Og5">
             <objects>
                 <viewController id="MT4-8X-Tg6" customClass="ResultScreenVC" customModule="Working_Structure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Kl-8f-cl4">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAL-Fx-e6g">
-                                <rect key="frame" x="50.666666666666657" y="159" width="292" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAL-Fx-e6g">
+                                <rect key="frame" x="50.666666666666657" y="100" width="292" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l33-Zn-Snq">
-                                <rect key="frame" x="148.66666666666666" y="571.66666666666663" width="95.666666666666657" height="46.333333333333371"/>
+                                <rect key="frame" x="148.66666666666666" y="595.66666666666663" width="95.666666666666657" height="46.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Close">
                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
@@ -150,7 +156,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kpz-fd-S2R" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1505" y="4"/>
+            <point key="canvasLocation" x="2431.2977099236641" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KLb-yo-xNa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fPO-2c-JZc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gtb-pr-jlD">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="R80-dg-R2N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xXJ-za-uJ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="107.63358778625954" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>

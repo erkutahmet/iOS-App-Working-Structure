@@ -9,7 +9,6 @@ import UIKit
 
 class GameScreenVC: UIViewController {
 
-    @IBOutlet weak var gameScreenLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         

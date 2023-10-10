@@ -108,9 +108,6 @@
                             <constraint firstItem="Dqp-xu-age" firstAttribute="bottom" secondItem="ALL-o9-FFa" secondAttribute="bottom" constant="200" id="tqz-nj-Nu2"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="gameScreenLabel" destination="koF-rZ-Vqs" id="gw2-KI-JCN"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bom-Z9-JUq" sceneMemberID="firstResponder"/>
             </objects>
@@ -150,9 +147,6 @@
                             <constraint firstItem="t65-GA-l0J" firstAttribute="bottom" secondItem="l33-Zn-Snq" secondAttribute="bottom" constant="200" id="hko-oq-ZBm"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="resultScreenLabel" destination="fAL-Fx-e6g" id="MvI-Qw-CBg"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kpz-fd-S2R" sceneMemberID="firstResponder"/>
             </objects>

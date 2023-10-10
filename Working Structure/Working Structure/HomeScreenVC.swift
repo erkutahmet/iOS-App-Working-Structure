@@ -9,11 +9,15 @@ import UIKit
 
 class HomeScreenVC: UIViewController {
 
+    @IBOutlet weak var homeScreenLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
-
+    @IBAction func makeButtonClicked(_ sender: Any) {
+    }
+    
+    @IBAction func startButtonClicked(_ sender: Any) {
+    }
 }
 

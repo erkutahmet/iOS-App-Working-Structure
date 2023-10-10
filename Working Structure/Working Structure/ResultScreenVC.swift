@@ -9,8 +9,11 @@ import UIKit
 
 class ResultScreenVC: UIViewController {
 
+    @IBOutlet weak var resultScreenLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    @IBAction func closeButtonClicked(_ sender: Any) {
     }
 }

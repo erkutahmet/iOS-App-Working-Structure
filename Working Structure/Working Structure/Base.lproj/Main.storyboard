@@ -22,14 +22,41 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VjG-ra-tIN">
+                                <rect key="frame" x="155" y="572.66666666666663" width="83.333333333333314" height="45.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0P9-LG-g3A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0YF-PO-R7T">
+                                <rect key="frame" x="150.33333333333334" y="403" width="92.666666666666657" height="46.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Make">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="makeButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NLK-6s-qSQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="VjG-ra-tIN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3gU-SQ-sAD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VjG-ra-tIN" secondAttribute="bottom" constant="200" id="LZC-Hy-dWx"/>
                             <constraint firstItem="32I-Wp-jsc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kKD-wq-Yn1"/>
                             <constraint firstItem="32I-Wp-jsc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="lh4-Fg-HPx"/>
+                            <constraint firstItem="0YF-PO-R7T" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vfZ-r9-5GC"/>
+                            <constraint firstItem="0YF-PO-R7T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wgq-ir-zgM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="homeScreenLabel" destination="32I-Wp-jsc" id="09z-7G-hKZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -49,14 +76,41 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QG0-WH-caQ">
+                                <rect key="frame" x="153.33333333333334" y="403" width="86.333333333333343" height="46.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButtonClicked:" destination="hqU-Fg-5wO" eventType="touchUpInside" id="7RI-P5-n9E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALL-o9-FFa">
+                                <rect key="frame" x="151" y="571.66666666666663" width="91" height="46.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Done">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="doneButtonClicked:" destination="hqU-Fg-5wO" eventType="touchUpInside" id="NeF-SL-6NL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Dqp-xu-age"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="koF-rZ-Vqs" firstAttribute="centerX" secondItem="jxB-AW-AkW" secondAttribute="centerX" id="3YR-2s-yyG"/>
+                            <constraint firstItem="QG0-WH-caQ" firstAttribute="centerY" secondItem="jxB-AW-AkW" secondAttribute="centerY" id="He3-Jk-Yb0"/>
                             <constraint firstItem="koF-rZ-Vqs" firstAttribute="top" secondItem="Dqp-xu-age" secondAttribute="top" constant="100" id="RTU-V8-SPu"/>
+                            <constraint firstItem="ALL-o9-FFa" firstAttribute="centerX" secondItem="jxB-AW-AkW" secondAttribute="centerX" id="XL4-9T-fxi"/>
+                            <constraint firstItem="QG0-WH-caQ" firstAttribute="centerX" secondItem="jxB-AW-AkW" secondAttribute="centerX" id="gHT-IC-fCF"/>
+                            <constraint firstItem="Dqp-xu-age" firstAttribute="bottom" secondItem="ALL-o9-FFa" secondAttribute="bottom" constant="200" id="tqz-nj-Nu2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="gameScreenLabel" destination="koF-rZ-Vqs" id="gw2-KI-JCN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bom-Z9-JUq" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,14 +130,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l33-Zn-Snq">
+                                <rect key="frame" x="148.66666666666666" y="571.66666666666663" width="95.666666666666657" height="46.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Close">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="closeButtonClicked:" destination="MT4-8X-Tg6" eventType="touchUpInside" id="KWt-7y-vZw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t65-GA-l0J"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="fAL-Fx-e6g" firstAttribute="top" secondItem="t65-GA-l0J" secondAttribute="top" constant="100" id="3FO-xb-2eJ"/>
                             <constraint firstItem="fAL-Fx-e6g" firstAttribute="centerX" secondItem="6Kl-8f-cl4" secondAttribute="centerX" id="UhX-Wc-VJn"/>
+                            <constraint firstItem="l33-Zn-Snq" firstAttribute="centerX" secondItem="6Kl-8f-cl4" secondAttribute="centerX" id="f4H-eX-y8w"/>
+                            <constraint firstItem="t65-GA-l0J" firstAttribute="bottom" secondItem="l33-Zn-Snq" secondAttribute="bottom" constant="200" id="hko-oq-ZBm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultScreenLabel" destination="fAL-Fx-e6g" id="MvI-Qw-CBg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kpz-fd-S2R" sceneMemberID="firstResponder"/>
             </objects>

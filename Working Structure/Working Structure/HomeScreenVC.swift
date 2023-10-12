@@ -10,7 +10,7 @@ import UIKit
 class HomeScreenVC: UIViewController {
 
     @IBOutlet weak var homeScreenLabel: UILabel!
-
+    
     override func viewDidLoad() { // The application runs the first time it is opened (it only runs once)
         super.viewDidLoad()
         homeScreenLabel.text = "Welcome\nHome Screen"
@@ -52,5 +52,13 @@ class HomeScreenVC: UIViewController {
                 toVC.person = data
             }
         }
+    }
+    
+    @IBAction func addButtonClicked(_ sender: Any) {
+        print("Add Selected")
+    }
+    
+    @IBAction func saveButtonClicked(_ sender: Any) {
+        print("Save Selected")
     }
 }

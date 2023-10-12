@@ -54,7 +54,21 @@
                             <constraint firstItem="0YF-PO-R7T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wgq-ir-zgM"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="WSt-ee-abB"/>
+                    <navigationItem key="navigationItem" id="WSt-ee-abB">
+                        <rightBarButtonItems>
+                            <barButtonItem style="plain" systemItem="add" id="oLf-DK-iVi">
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <connections>
+                                    <action selector="addButtonClicked:" destination="BYZ-38-t0r" id="sQp-s5-pWM"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem style="plain" systemItem="save" id="j4w-Eb-uo3">
+                                <connections>
+                                    <action selector="saveButtonClicked:" destination="BYZ-38-t0r" id="Og3-MB-IYB"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <connections>
                         <outlet property="homeScreenLabel" destination="32I-Wp-jsc" id="09z-7G-hKZ"/>
                         <segue destination="hqU-Fg-5wO" kind="show" identifier="toGameScreen" id="oDt-g0-KTP"/>
@@ -180,6 +194,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

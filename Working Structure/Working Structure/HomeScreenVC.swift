@@ -20,6 +20,19 @@ class HomeScreenVC: UIViewController {
     }
     
     @IBAction func startButtonClicked(_ sender: Any) {
-        performSegue(withIdentifier: "toGameScreen", sender: nil)
+        let person = Persons(name: "Erkut", age: 21, height: 1.88, status: true)
+        performSegue(withIdentifier: "toGameScreen", sender: person)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("prepare func worked")
+        if segue.identifier == "toGameScreen" {
+            print("toGameScreen passed")
+            
+            if let data = sender as? Persons {
+                let toVC = segue.destination as! GameScreenVC
+                toVC.person = data
+            }
+        }
     }
 }
